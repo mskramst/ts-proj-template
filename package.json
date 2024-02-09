@@ -1,0 +1,35 @@
+{
+  "name": "ts-proj-test",
+  "version": "0.0.1",
+  "description": "Typescript template test",
+  "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "node build.js",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint tsconfig.json",
+    "start": "node build.js && node ./dist/index.js",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "esbuild": "^0.20.0",
+    "eslint": "^8.56.0",
+    "npm-dts": "^1.3.12",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^9.1.0"
+  }
+}
